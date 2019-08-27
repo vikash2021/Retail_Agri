@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AgricultureTabbed</string>
+    <string name="tab_text_1">Latest Technology</string>
+    <string name="tab_text_2">Latest Techniques</string>
+    <string name="tab_text_3">Govt Schemes</string>
+    <string name="txt">
+Note:Online delivery is available for orders of more than 2 litres only.For orders of less than or equal to 2 litres ,you will have to visit our nearby outlets.
+    </string>
+    <string name="milk_products" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

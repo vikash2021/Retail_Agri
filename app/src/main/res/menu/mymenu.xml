@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Agri tool"
+        android:id="@+id/agritool"></item>
+    <item android:title="Bio Manures"
+        android:id="@+id/biomanure"></item>
+    <item android:title="About Us"
+        android:id="@+id/aboutus"></item>
+    <item android:title="Help"
+        android:id="@+id/help"></item>
+</menu>
