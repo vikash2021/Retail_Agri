@@ -30,43 +30,16 @@ public class final_order extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                final int str1=Integer.parseInt(milkAmount.getText().toString());
-                final String str2 = mobileNumber.getText().toString();
-                final String str3 = Add1.getText().toString();
-                final String str4 = Add2.getText().toString();
+
+                    Intent i=new Intent(getApplicationContext(),OrderDetails.class);
+                    i.putExtra("amountOfMilk",milkAmount.getText().toString());
+                    i.putExtra("Address",Add1.getText().toString());
+                    i.putExtra("phone",mobileNumber.getText().toString());
+                    i.putExtra("name","chandra shekhar");
+                    startActivity(i);
 
 
 
-                if (str1<=2)
-
-                {
-
-                    Toast.makeText(final_order.this, "Please visit our nearby outlets", Toast.LENGTH_SHORT).show();
-                    milkAmount.setText("");
-                    mobileNumber.setText("");
-                    Add1.setText("");
-                    Add2.setText("");
-                    startActivity(new Intent(getApplicationContext(), milk_order.class));
-
-
-                }
-                else
-                {
-                    milkAmount.setText("");
-                    mobileNumber.setText("");
-                    Add1.setText("");
-                    Add2.setText("");
-                    startActivity(new Intent(getApplicationContext(),order_confirmation.class));
-                    final Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            startActivity(new Intent(getApplicationContext(), milk_order.class));
-
-                        }
-                    }, 4000);
-
-                }
 
 
             }

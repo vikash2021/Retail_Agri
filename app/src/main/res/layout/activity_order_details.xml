@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".OrderDetails">
+
+    <TextView
+        android:id="@+id/orderdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginBottom="550dp"
+        android:text="Order Details"
+        android:textColor="#0F7013"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginBottom="130dp"
+        android:backgroundTint="@color/cardview_shadow_end_color">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="name"
+            android:textAlignment="center"
+            android:textColor="#063508"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+
+            android:layout_marginTop="50dp"
+            android:text="Address"
+            android:textAlignment="center"
+            android:textColor="#063508"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="130dp"
+            android:text="Phone Number"
+            android:textAlignment="center"
+            android:textColor="#063508"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/AmmountofMilk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="170dp"
+            android:text="Amount of milk"
+            android:textAlignment="center"
+            android:textColor="#063508"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/paymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Payment"
+            android:textAlignment="center"
+            android:layout_marginTop="200dp"
+            android:textColor="#063508"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:layout_marginTop="250dp">
+
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:editable="true"
+                android:id="@+id/credit_debi"/>
+            <TextView
+                android:id="@+id/credit_debit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Credit/Debit"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#063508"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:editable="true"
+                android:id="@+id/payt"/>
+            <TextView
+                android:id="@+id/paytm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Paytm/UPI"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:textColor="#063508"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="70dp"
+                android:editable="true"
+                android:id="@+id/netbanking"/>
+            <TextView
+                android:id="@+id/netBanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Net Banking"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="75dp"
+                android:textColor="#063508"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="105dp"
+                android:editable="true"
+                android:id="@+id/cod"/>
+            <TextView
+                android:id="@+id/cashondelievry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="COD"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="110dp"
+                android:textColor="#063508"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/confirmOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
+        android:layout_marginBottom="19dp"
+        android:text="Confirm Order"
+        android:textColor="#0F7013"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</RelativeLayout>

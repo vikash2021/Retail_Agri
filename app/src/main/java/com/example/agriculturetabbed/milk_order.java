@@ -20,7 +20,7 @@ public class milk_order extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent i = new Intent(getApplication(), map.class);
+               Intent i = new Intent(getApplication(), mapFinish.class);
                startActivity(i);
             }
         });

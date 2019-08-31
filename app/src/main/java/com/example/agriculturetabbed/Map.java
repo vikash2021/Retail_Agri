@@ -40,7 +40,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
-public class map extends AppCompatActivity implements OnMapReadyCallback, PermissionsListener {
+public class Map extends AppCompatActivity implements OnMapReadyCallback, PermissionsListener {
     private MapView mapView;
     MapboxMap mapboxMap;
     LocationComponent locationComponent;
@@ -50,15 +50,20 @@ public class map extends AppCompatActivity implements OnMapReadyCallback, Permis
     Marker outlat3;
     LocationEngine locationEngine;
     LocationManager locationManager;
+    String apiKey="pk.eyJ1IjoiZ29sZGJ1cmcxIiwiYSI6ImNqbDNqNmsxbDIxejgzbHFwaXJyeXlrYTAifQ.XwGhMXz0Muvfj2eJUUN5hg";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         Mapbox.getInstance(this, "pk.eyJ1IjoiZ29sZGJ1cmcxIiwiYSI6ImNqbDNqNmsxbDIxejgzbHFwaXJyeXlrYTAifQ.XwGhMXz0Muvfj2eJUUN5hg");
         setContentView(R.layout.activity_main);
-        mapView = findViewById(R.id.mapView);
-        mapView.onCreate(savedInstanceState);
+        mapView =(MapView) findViewById(R.id.mapView);
+
+            mapView.onCreate(savedInstanceState);
+
         mapView.getMapAsync(this);
     }
 
@@ -136,7 +141,7 @@ public class map extends AppCompatActivity implements OnMapReadyCallback, Permis
     @Override
     protected void onResume() {
         super.onResume();
-        mapView.onResume();
+       mapView.onResume();
     }
 
     @Override
@@ -160,7 +165,7 @@ public class map extends AppCompatActivity implements OnMapReadyCallback, Permis
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mapView.onDestroy();
+       mapView.onDestroy();
     }
 
     @Override

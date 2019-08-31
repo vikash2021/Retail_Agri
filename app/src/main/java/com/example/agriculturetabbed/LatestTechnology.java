@@ -16,7 +16,7 @@ import java.util.zip.Inflater;
 
 public class LatestTechnology extends Fragment {
     ListView ls;
-    String[] Title={"Fertilizer Spreankler",
+    String[] Title={"Fertilizer Sprinkler",
             "Potato Spreader",
             "Soil Quality Detector",
             "Modern Harvest Machine",
