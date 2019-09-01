@@ -4,83 +4,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundcolor"
+    android:background="@color/lightgray"
     tools:context=".PlacedOrder">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="300dp"
-        android:layout_height="500dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:layout_marginBottom="104dp">
+    <ImageView
+        android:layout_width="80dp"
+        android:id="@+id/a1"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ellip"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cash Memo"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:id="@+id/t6"
+        android:layout_below="@id/a1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t4"
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Placed Order"
-            android:textAlignment="center"
-            android:textColor="#0B420D"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/t6"
+        android:text="Delivery Address:"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="name"
-            android:textAlignment="center"
-            android:textColor="#0B420D"
-            android:textSize="26sp"
-            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/amou"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:text="amount"
-            android:textAlignment="center"
-            android:textColor="#0B420D"
-            android:textSize="26sp"
-            android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/t3"
+        android:layout_below="@id/t4"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:text="@string/txt1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:layout_below="@+id/t3"
 
-        <TextView
-            android:id="@+id/addresss"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="150dp"
-            android:text="address"
-            android:textAlignment="center"
-            android:textColor="#0B420D"
-            android:textSize="26sp"
-            android:textStyle="bold" />
+        android:text="Order ID: XCBRE456765465454"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        />
 
-        <TextView
-            android:id="@+id/phoneNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="260dp"
-            android:text="phone"
-            android:textAlignment="center"
-            android:textColor="#0B420D"
-            android:textSize="26sp"
-            android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:layout_below="@+id/t1"
+        android:text="Order Date: 27.08.2019"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
 
-        <Button
-            android:id="@+id/Done"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="380dp"
-            android:background="#43a047"
-            android:text="Done"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+        />
 
-    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2"
+        android:id="@+id/t8"
+        android:text="Description : 4L Milk(₹38 per litre)"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount in Words:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/t7"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/t8"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="One hundred fifty two only"
+        android:textSize="20dp"
+        android:layout_below="@id/t7"
+        android:id="@+id/t9"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Authorised Signatory"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:id="@+id/t10"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/t9"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Print"
+        android:textColor="@color/lightgray"
+        android:id="@+id/buttton1"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="#43a047"
+        android:layout_marginRight="60dp"
+        android:layout_below="@id/t10"
+        android:layout_marginEnd="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"/>
+
 </RelativeLayout>

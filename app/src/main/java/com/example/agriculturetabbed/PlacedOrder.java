@@ -10,26 +10,23 @@ import android.widget.TextView;
 
 public class PlacedOrder extends AppCompatActivity {
 
+    Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_placed_order);
-        Intent i=getIntent();
-        TextView name=findViewById(R.id.name);
-        TextView address=findViewById(R.id.addresss);
-        TextView amnt=findViewById(R.id.amou);
-        TextView phone=findViewById(R.id.phoneNumber);
-        Button done=findViewById(R.id.Done);
-        name.setText(i.getExtras().getString("name"));
-        address.setText(i.getExtras().getString("Address"));
-        phone.setText(i.getExtras().getString("phone"));
-        amnt.setText(i.getExtras().getString("amount"));
-        done.setOnClickListener(new View.OnClickListener() {
+
+        button = (Button) findViewById(R.id.buttton1);
+
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent j=new Intent(getApplication(),Milk_milkproducts_fodder.class);
-                startActivity(j);
+
+                startActivity(new Intent(getApplicationContext(), milk_sell_purchase.class));
+
             }
         });
+
     }
 }

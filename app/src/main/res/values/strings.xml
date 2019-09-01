@@ -10,4 +10,12 @@ Note:Online delivery is available for orders of more than 2 litres only.For orde
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt1">
+         Vikash Kumar\n
+         AJC Bose Boys Hostel,\n
+         UIT,BU,Burdwan,\n
+         WestBengal-713201\n
+         Mob. No.:6299456654
+    </string>
+
 </resources>
